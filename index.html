@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="icon" href="media/icon.svg" type="image/x-icon" sizes="16x16 32x32">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Junge&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img class="celebration" src="media/Frame2.png" alt="">
+        <p class="heading">Rock Paper Scissors</p>
+        <div class="buttons-container">
+            <!-- Player choices buttons will go here (not coded yet) -->
+        </div>
+        <div class="game-info">
+            <section class="players-choice">
+                <h2>Player's Choice</h2>
+                <img class="choice-image" src="media/Ellipse.png">
+                <p id="pp-choice">Start!</p>
+            </section>
+            <section class="computers-choice">
+                <h2>Computer's Choice</h2>
+                <img class="choice-image c" src="media/Ellipse.png">
+                <p id="cp-choice">Start!</p>
+            </section>
+        </div>
+        <section class="result">
+            <h2>Result: </h2>
+            <p id="game-result">🤷</p>
+        </section>
+        <button id="play-again">Play Again</button>
+    </div>
+    <footer>
+        <p class="footer">&copy; Copyright 2023 Developed by Tamer Elbatrekhi.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

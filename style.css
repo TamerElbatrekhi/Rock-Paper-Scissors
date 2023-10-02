@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    background-image: url(media/Frame1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    /* height: calc(100vh - 39px); */
+    height: 100vh;
+}
+.celebration{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    width: 900px;
+    display: none;
+}
+@keyframes slideIn {
+    from {
+            top: -50%;
+    }
+    to {
+        top: 80%;
+    }
+}
+    .celebration {
+    animation: slideIn 1s ease-in-out; /* Apply the animation */
+}
+.heading{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    margin: 0px 250px 20px;
+}
+h2{
+    font-size: 18px;
+    font-weight: 400;
+    color: #900051;
+}
+.buttons-container button{
+    padding: 10px 0px;
+    color: #fff;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    width: 100px;
+}
+button:hover , #play-again:hover {
+    cursor: pointer;
+    color: #900051;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.game-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.players-choice{
+    width: 300px;
+    height: 250px;
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.choice-image{
+    width: 140px;
+    margin-top: 20px;
+}
+.c{
+    width: 140px;
+    margin-top: 20px;
+    transform: rotate(180deg);
+}
+.computers-choice{
+    width: 300px;
+    height: 250px;
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.result{
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    margin: 20px 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+}
+.result p{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.buttonContainer{
+    text-align: center;
+}
+#play-again{
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 200px;
+    text-align: center;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: #900051;
+}
+footer .footer{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* Start media queries  */
+@media (max-width: 768px) {
+    .heading{
+        font-size: 20px;
+        padding: 20px;
+        margin: 10px 15px;
+    }
+    .celebration{
+        width: 300px;
+    }
+    h2{
+        font-size: 14px;
+    }
+    .buttons-container button{
+        margin: 10px;
+        font-size: 14px;
+    }
+    .game-info{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .players-choice{
+        width: 150px;
+        height: 200px;
+        padding: 15px 15px;
+    }
+    .choice-image{
+        width: 80px;
+    }
+    .computers-choice{
+        width: 150px;
+        height: 200px;
+        padding: 15px 15px;
+    }
+    .result{
+        margin: 20px 15px;
+    }
+    .result h2{
+        font-size: 20px;
+    }
+    .result p{
+        font-size: 20px;
+    }
+    #play-again{
+        padding: 10px 0px;
+        margin: 20px auto;
+        font-size: 14px;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+    .game-info{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .result{
+        margin: 20px 80px;
+    }
+}
+/* End media queries  */
